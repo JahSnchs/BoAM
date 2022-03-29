@@ -60,81 +60,7 @@
     <Compile Include="Assets\scrips\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiFrag.cginc" />
     <None Include="Assets\csc.rsp" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_Poicludes.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPanosphere.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiGrab.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\poi-tools\Resources\Poi\PoiTexturePacker.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Shaders\S_Poiyomi_Toon.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiEnvironmentalRimLighting.cginc" />
-    <None Include="Assets\_PoiyomiShaders\poiToonPresets.txt" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiData.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiIridescence.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiSpawnInVert.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\poi-tools\Resources\Poi\PoiTextureUnpacker.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMainTex.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPassShadow.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Extras\InvisStencil.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiAudioLink.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiBulge.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiVoronoi.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDepthColor.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiClearCoat.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiBRDF.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiWireframe.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiShadowVert.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiGlitter.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPathing.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDecal.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiRandom.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiVert.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDithering.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiParallax.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\Notes.txt" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiFlipbook.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiUVDistortion.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDissolve.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiShadowIncludes.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMath.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiRimLighting.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiSubsurfaceScattering.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMSDF.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiBlackLight.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiSpawnInFrag.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiAlphaToCoverage.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Shaders\7PlusLabels.txt" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\PoiLabels.txt" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiRGBMask.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMirror.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\Example1.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiSpecular.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMatcap.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiHologram.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPass.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\Example2.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiTessellation.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiHelpers.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiEmission.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDebug.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPenetration.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiDefines.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiOutlineFrag.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Extras\MasterScanner.shader" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_FunctionsArtistic.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMacros.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiBackFace.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiLighting.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiPassOutline.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiOutlineVert.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiShadowFrag.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiVertexManipulations.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiBlending.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\ThryPresetsExample.txt" />
-    <None Include="Assets\_PoiyomiShaders\Scripts\ThryEditor\Examples\ThryLabelExample.txt" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiMetal.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiV2F.cginc" />
-    <None Include="Assets\_PoiyomiShaders\Shaders\Pro\Includes\CGI_PoiVideo.cginc" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -739,10 +665,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ThryAssemblyDefinition.csproj">
-      <Project>{90083E65-03C1-B23C-783F-70A9A33F5229}</Project>
-      <Name>ThryAssemblyDefinition</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

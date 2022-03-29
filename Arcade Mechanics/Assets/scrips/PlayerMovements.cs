@@ -16,13 +16,17 @@ public class PlayerMovements : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
+        float yStore = moveDirection.y;
+        moveDirection = (Input.GetAxis("Vertical") * Time.deltaTime * transform.forward) + (Input.GetAxis("Horizontal") * Time.deltaTime * transform.right);
+        moveDirection = moveDirection.normalized * moveSpeed;
+        moveDirection.y = yStore;
+
         if (controller.isGrounded)
         {
             moveDirection.y = -1f;
@@ -31,10 +35,7 @@ public class PlayerMovements : MonoBehaviour
                 moveDirection.y = jumpForce;
             }
         }
-
-        moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
-
-        moveDirection.y += Physics.gravity.y * gravityScale;
+        moveDirection.y += Physics.gravity.y * gravityScale * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
 }
