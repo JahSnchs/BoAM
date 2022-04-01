@@ -25,7 +25,7 @@ public class PlayerMovements : MonoBehaviour
         moveDirection = moveDirection.normalized * moveSpeed;
         moveDirection.y = yStore;
 
-        if(moveDirection.z > 0||moveDirection.x > 0)
+        if (moveDirection.z > 0 || moveDirection.x > 0)
         {
             animator.SetFloat("Speed", 1);
         }
