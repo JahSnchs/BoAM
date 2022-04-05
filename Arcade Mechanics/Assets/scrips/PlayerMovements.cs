@@ -25,25 +25,25 @@ public class PlayerMovements : MonoBehaviour
         moveDirection = moveDirection.normalized * moveSpeed;
         moveDirection.y = yStore;
 
-        print(moveDirection.z);
+        moveDirection.y += Physics.gravity.y * gravityScale * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
 
         if (moveDirection.z != 0 || moveDirection.x != 0)
         {
-            animator.SetFloat("Speed", 1);
+            animator.SetBool("walk", true);
         }
         else
         {
-            animator.SetFloat("Speed", 0);
+            animator.SetBool("walk", false);
         }
         if (controller.isGrounded)
         {
-            animator.SetBool("InAir", false);
+            animator.SetBool("fall", false);
         }
         else
         {
-            animator.SetBool("InAir", true);
+            animator.SetBool("fall", true);
         }
-        moveDirection.y += Physics.gravity.y * gravityScale * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
+
     }
 }
