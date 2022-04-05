@@ -25,7 +25,9 @@ public class PlayerMovements : MonoBehaviour
         moveDirection = moveDirection.normalized * moveSpeed;
         moveDirection.y = yStore;
 
-        if (moveDirection.z > 0 || moveDirection.x > 0)
+        print(moveDirection.z);
+
+        if (moveDirection.z != 0 || moveDirection.x != 0)
         {
             animator.SetFloat("Speed", 1);
         }
@@ -36,13 +38,6 @@ public class PlayerMovements : MonoBehaviour
         if (controller.isGrounded)
         {
             animator.SetBool("InAir", false);
-            animator.SetBool("Jump", false);
-            moveDirection.y = -1f;
-            if (Input.GetButtonDown("Jump"))
-            {
-                animator.SetBool("Jump", true);
-                moveDirection.y = jumpForce;
-            }
         }
         else
         {
