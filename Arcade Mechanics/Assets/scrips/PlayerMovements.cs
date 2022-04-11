@@ -6,11 +6,11 @@ public class PlayerMovements : MonoBehaviour
 {
 
     public float moveSpeed;
-    public float jumpForce;
     public CharacterController controller;
     private Vector3 moveDirection;
     public float gravityScale;
     public Animator animator;
+    private float airtime;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class PlayerMovements : MonoBehaviour
     }
     void Update()
     {
-        //moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
+        //moveDirection
         float yStore = moveDirection.y;
         moveDirection = (Input.GetAxis("Vertical") * Time.deltaTime * transform.forward) + (Input.GetAxis("Horizontal") * Time.deltaTime * transform.right);
         moveDirection = moveDirection.normalized * moveSpeed;
@@ -28,6 +28,7 @@ public class PlayerMovements : MonoBehaviour
         moveDirection.y += Physics.gravity.y * gravityScale * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
 
+        //Animations
         if (moveDirection.z != 0 || moveDirection.x != 0)
         {
             animator.SetBool("walk", true);
@@ -38,12 +39,25 @@ public class PlayerMovements : MonoBehaviour
         }
         if (controller.isGrounded)
         {
+            airtime = 0;
+            moveDirection.y = 0;
             animator.SetBool("fall", false);
         }
         else
         {
-            animator.SetBool("fall", true);
+            airtime += 100*Time.deltaTime;
+            if (airtime >= 85)
+            {
+                animator.SetBool("fall", true);
+            }
         }
-
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animator.SetBool("attack", true);
+        }
+        else
+        {
+            animator.SetBool("attack", false);
+        }
     }
 }

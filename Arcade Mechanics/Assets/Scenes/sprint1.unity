@@ -1334,7 +1334,7 @@ CharacterController:
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.03
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 3.06, z: 0.24}
 --- !u!95 &1564011488
 Animator:
@@ -1368,9 +1368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 10
   controller: {fileID: 1564011487}
-  gravityScale: 0.3
+  gravityScale: 1
   animator: {fileID: 1564011488}
 --- !u!4 &1564011490 stripped
 Transform:
